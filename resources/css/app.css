@@ -1,0 +1,108 @@
+:root, html {
+    --primary-color: #db5461;
+    --secondary-color: #ffd9ce;
+    --accent-one: #fbf5f3;
+    --accent-two: #cebebe;
+    --accent-three: #242038;
+    background-color: #fbf5f3;
+    scroll-behavior: smooth;
+    --gold: #b79541;
+
+}
+
+.text-gold {
+    color: var(--gold);
+}
+
+.bg-gold {
+    background-color: var(--gold);
+}
+
+.text-primary {
+   color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-accent-one {
+    color: var(--accent-one)
+}
+
+.text-accent-two {
+    color: var(--accent-two)
+}
+
+.text-accent-three {
+    color: var(--accent-three)
+}
+
+.nav-link:hover {
+    color: var(--accent-three);
+} 
+
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+
+.bg-accent-one {
+    background-color: var(--accent-one);
+}
+.bg-accent-two {
+    background-color: var(--accent-two);
+}
+.bg-accent-three {
+    background-color: var(--accent-three);
+}
+
+.border-primary {
+    border-color: var(--primary-color);
+}
+
+.border-secondary {
+    border-color: var(--secondary-color);
+}
+
+.border-accent-one {
+    border-color: var(--accent-one);
+}
+
+.border-accent-two {
+    border-color: var(--accent-two);
+}
+
+.border-accent-three {
+    border-color: var(--accent-three);
+}
+
+.text-shadow-primary {
+    text-shadow: 1px 1px var(--primary-color);
+}
+
+.text-shadow-secondary {
+    text-shadow: 1px 1px var(--secondary-color);
+}
+
+
+.text-shadow-accent-three {
+    text-shadow: 1px 1px var(--accent-three);
+}
+
+#navbar {
+    z-index: 99;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    height: 100px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
