@@ -17,6 +17,5 @@
         @include('partials.services')
         @include('partials.about-me')
         @include('partials.contact')
-  
     </body>
 </html>

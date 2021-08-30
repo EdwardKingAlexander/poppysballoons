@@ -117,63 +117,108 @@
                 </ul>
               </div>
   
+
               <!-- Contact form -->
               <div class="px-6 py-10 border-black sm:px-10 lg:col-span-2 xl:p-12">
                 <h3 class="text-lg font-medium text-warm-gray-900">Send us a message</h3>
-                <form action="{{ route('send-message') }}" method="POST" class="grid grid-cols-1 mt-6 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+
+                {{-- Error Handeling --}}
+
+                @if($errors->any())
+                  @include('partials.errors')
+                @endif
+
+                <form 
+                id="form" 
+                action="{{ route('send-message') }}"
+                name="contact-form" 
+                method="POST" 
+                class="grid grid-cols-1 mt-6 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                   @csrf
+                  
+
                   <div>
                     <label for="first-name" class="block text-sm font-medium text-warm-gray-900">First name</label>
                     <div class="mt-1">
-                      <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full px-4 py-3 rounded-md shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-600 border-warm-gray-300">
+                      <input required 
+                      type="text" 
+                      value="{{ old('first_name') }}" 
+                      name="first_name" id="first_name" 
+                      autocomplete="given-name" 
+                      class="block w-full px-4 py-3 rounded-md shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-600 border-warm-gray-300">
                     </div>
                   </div>
+
+
                   <div>
                     <label for="last-name" class="block text-sm font-medium text-warm-gray-900">Last name</label>
                     <div class="mt-1">
-                      <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full px-4 py-3 rounded-md shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-600 border-warm-gray-300">
+                      <input required type="text"value="{{ old('last_name') }}" name="last_name" id="last_name" autocomplete="family-name" class="block w-full px-4 py-3 rounded-md shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-600 border-warm-gray-300">
                     </div>
                   </div>
+
+
                   <div>
                     <label for="email" class="block text-sm font-medium text-warm-gray-900">Email</label>
                     <div class="mt-1">
-                      <input id="email" name="email" type="email" autocomplete="email" class="block w-full px-4 py-3 rounded-md shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-600 border-warm-gray-300">
+                      <input required id="email" value="{{ old('email') }}" name="email" type="email" autocomplete="email" class="block w-full px-4 py-3 rounded-md shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-600 border-warm-gray-300">
                     </div>
                   </div>
+
+
                   <div>
                     <div class="flex justify-between">
                       <label for="phone" class="block text-sm font-medium text-warm-gray-900">Phone</label>
-                      <span id="phone-optional" class="text-sm text-warm-gray-500">Optional</span>
+                      <span 
+                      id="phone-format"
+                      @if ($errors->has('phone'))
+                      class="text-sm text-red-500"
+                      @else 
+                      class="text-sm text-warm-gray-500"
+                      @endif
+                      >Format: xxxxxxxxx</span>
                     </div>
                     <div class="mt-1">
-                      <input type="text" name="phone" id="phone" autocomplete="tel" class="block w-full px-4 py-3 rounded-md shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-600 border-warm-gray-300" aria-describedby="phone-optional">
+                      <input 
+                      required 
+                      type="text" 
+                      value="{{ old('phone') }}" 
+                      name="phone" id="phone" 
+                      autocomplete="tel" 
+                      class="block w-full px-4 py-3 rounded-md shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-600 border-warm-gray-300" aria-describedby="phone-format">
                     </div>
                   </div>
+
+
                   <div class="sm:col-span-2">
                     <label for="subject" class="block text-sm font-medium text-warm-gray-900">Subject</label>
                     <div class="mt-1">
-                      <input type="text" name="subject" id="subject" class="block w-full px-4 py-3 rounded-md shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-600 border-warm-gray-300">
+                      <input required type="text" value="{{ old('subject') }}"  name="subject" id="subject" class="block w-full px-4 py-3 rounded-md shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-600 border-warm-gray-300">
                     </div>
                   </div>
+
+
                   <div class="sm:col-span-2">
                     <div class="flex justify-between">
                       <label for="message" class="block text-sm font-medium text-warm-gray-900">Message</label>
-                      <span id="message-max" class="text-sm text-warm-gray-500">Max. 500 characters</span>
+                      <span id="message-max" class="text-sm text-warm-gray-500">
+                        
+                        Max. 500 characters
+                      </span>
                     </div>
                     <div class="mt-1">
-                      <textarea id="message" name="message" rows="4" class="block w-full px-4 py-3 border rounded-md shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-600 border-warm-gray-300" aria-describedby="message-max"></textarea>
+                      <textarea id="message"   name="message" rows="4" class="block w-full px-4 py-3 border rounded-md shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-600 border-warm-gray-300" aria-describedby="message-max">{{ old('message') }}</textarea>
                     </div>
                   </div>
+
+
                   <div class="sm:col-span-2 sm:flex sm:justify-end">
-                    <button type="submit" class="inline-flex items-center justify-center w-full px-6 py-3 mt-2 
-                    text-base font-medium text-white 
-                    border border-white rounded-md shadow-sm text-shadow 
-                    bg-yellow-500 text-white 
-                    hover:bg-white hover:text-yellow-500 hover:border-yellow-500 
-                    focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 sm:w-auto">
+                    <button type="submit" class="inline-flex items-center justify-center w-full px-6 py-3 mt-2 text-base font-medium text-white bg-yellow-500 border border-white rounded-md shadow-sm text-shadow hover:bg-white hover:text-yellow-500 hover:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 sm:w-auto">
                       Submit
                     </button>
                   </div>
+
+
                 </form>
               </div>
             </div>
