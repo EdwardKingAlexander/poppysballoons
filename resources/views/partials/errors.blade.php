@@ -8,7 +8,11 @@
       </div>
       <div class="ml-3">
         <h3 class="text-sm font-medium text-red-800">
+          @if( count($errors) > 1)
           There were {{ count($errors) }} errors with your submission
+          @else 
+          There was 1 error with your submission
+          @endif
         </h3>
         <div class="mt-2 text-sm text-red-700">
           <ul role="list" class="pl-5 space-y-1 list-disc">
