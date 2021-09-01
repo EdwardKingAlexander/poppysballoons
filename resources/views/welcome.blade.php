@@ -11,11 +11,14 @@
 
     </head>
     <body>
-        @include('partials.navbar')
-        @include('partials.call-to-action')
-        @include('partials.portfolio')
-        @include('partials.services')
-        @include('partials.about-me')
-        @include('partials.contact')
+    
+        <main>
+            @include('partials.navbar')
+            @include('partials.call-to-action')
+            @include('partials.portfolio')
+            @include('partials.services')
+            @include('partials.about-me')
+            @include('partials.contact')
+        </main>
     </body>
 </html>
