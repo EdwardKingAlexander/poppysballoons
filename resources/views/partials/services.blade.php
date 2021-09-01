@@ -3,8 +3,8 @@
 <div class="py-12 bg-accent-one">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="lg:text-center">
-        <h2 class="text-base font-semibold tracking-wide text-black uppercase">Services</h2>
-        <p class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-black sm:text-4xl">
+        <h2 class="text-base font-semibold tracking-wide text-black uppercase rocky-windsong text-xl3">Services</h2>
+        <p class="mt-2 text-2xl font-extrabold leading-8 tracking-tight text-black sm:text-4xl">
           Make their birthdays and special events memorable
         </p>
         <p class="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">

@@ -4,7 +4,7 @@
       <div class="absolute top-0 bottom-0 hidden w-screen lg:block bg-gray-50 left-3/4"></div>
       <div class="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
         <div>
-          <h2 class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-white text-shadow-accent-three sm:text-4xl">Meet Rocio</h2>
+          <h2 class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-white rocky-windsong text-shadow-accent-three sm:text-4xl">Meet Rocio</h2>
         </div>
       </div>
       <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
@@ -20,7 +20,7 @@
           <div class="relative mx-auto text-base max-w-prose lg:max-w-none">
             <figure>
               <div class="aspect-w-12 aspect-h-7 lg:aspect-none">
-                <img class="object-cover object-center rounded-3xl shadow-lg" src="/img/rocio.jpg" alt="Rocio showcasing her art" width="1184" height="1376">
+                <img class="object-cover object-center shadow-lg rounded-3xl" src="/img/rocio.jpg" alt="Rocio showcasing her art" width="1184" height="1376">
               </div>
               <figcaption class="flex mt-3 text-sm text-white">
                 <!-- Heroicon name: solid/camera -->

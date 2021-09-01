@@ -1,4 +1,5 @@
 :root, html {
+    font-family: 'Montserrat', sans-serif;
     --primary-color: #E68992;
     --secondary-color: #ffd9ce;
     --accent-one: #fbf5f3;
@@ -9,6 +10,11 @@
     --gold: #F28F3B;
 
 }
+
+.rocky-windsong {
+    font-family: 'WindSong', cursive;
+}
+
 
 .text-gold {
     color: var(--gold);

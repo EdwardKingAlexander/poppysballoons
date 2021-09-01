@@ -21,7 +21,7 @@
   
         <div class="relative bg-primary lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
           <div class="relative max-w-md px-4 py-12 mx-auto space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
-            <h2 class="text-3xl font-extrabold text-white" id="join-heading">Bringing Life to the Party!</h2>
+            <h2 class="text-3xl font-extrabold text-white rocky-windsong" id="join-heading">Bringing Life to the Party!</h2>
             <p class="text-lg text-white">I bring fun and advenrure to birthdays, weddings, and everything inbetween!</p>
             <a class="block w-full px-5 py-3 text-base font-medium text-center text-white bg-yellow-500 border border-white rounded-md shadow-md hover:bg-white hover:text-yellow-500 sm:inline-block sm:w-auto" href="#">Contact Me Now!</a>
           
