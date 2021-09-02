@@ -9,7 +9,7 @@ return [
     'close-menu' => 'Close Menu',
     'nav-call-now' => 'Call Now',
     
-    'call-to-action-title' => 'Professinoal Facepainting and Balloon Animal Services',
+    'call-to-action-title' => 'Professional Facepainting and Balloon Animal Services',
     'call-to-action-description' => 'I bring fun and advenrure to birthdays, weddings, and everything inbetween!',
     'call-to-action-picture' => 'A giraffe balloon animal',
     'call-to-action-button' => 'Contact Me Now!',

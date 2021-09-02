@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +15,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/{lang?}', function ($lang = null) {
+    // if the language is es, display spanish
+    if($lang == 'es')
+    {
+        App::setlocale('es');
+        return view('welcome');
+    } else {
+        return view('welcome');
+    }
+    
 });
 
 Route::post('/send-message', [ContactController::class, 'store'])->name('send-message');
