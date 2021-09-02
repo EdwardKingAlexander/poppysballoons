@@ -3,26 +3,26 @@
   <div class="px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 lg:px-8">
     <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer">
       <div class="px-5 py-2">
-        <a href="#about-me" class="text-base text-white hover:text-gray-900">
-          About
+        <a href="#about-me" class="text-lg text-white hover:text-gray-900">
+          {{ __('lang.footer-link-1') }}
         </a>
       </div>
 
       <div class="px-5 py-2">
-        <a href="#portfolio" class="text-base text-white hover:text-gray-900">
-          Portfolio
+        <a href="#portfolio" class="text-lg text-white hover:text-gray-900">
+          {{ __('lang.footer-link-2') }}
         </a>
       </div>
 
       <div class="px-5 py-2">
-        <a href="#services" class="text-base text-white hover:text-gray-900">
-          Services
+        <a href="#services" class="text-lg text-white hover:text-gray-900">
+          {{ __('lang.footer-link-3') }}
         </a>
       </div>
 
       <div class="px-5 py-2">
-        <a href="#contact" class="text-base text-white hover:text-gray-900">
-          Contact
+        <a href="#contact" class="text-lg text-white hover:text-gray-900">
+          {{ __('lang.footer-link-4') }}
         </a>
       </div>
       
@@ -43,7 +43,7 @@
       </a>
       
     </div>
-    <p class="pt-5 text-base text-black text-semibold hover:text-white hover:underline xl:text-center">
+    <p class="pt-5 text-lg text-black text-semibold hover:text-white hover:underline xl:text-center">
       <a href="https://rockymountainweb.design">&copy; <?php echo date("Y"); ?> Rocky Mountain Web Design LLC. All rights reserved.</a>
    </p>
   </div>

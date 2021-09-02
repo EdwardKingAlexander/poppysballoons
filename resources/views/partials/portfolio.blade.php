@@ -4,10 +4,10 @@
 
     <div class="relative pb-5">
         <h2 class="text-3xl font-extrabold leading-8 tracking-tight text-center text-gray-900 rocky-windsong sm:text-4xl">
-         Check Out of Portfolio from Instagram!
+         {{ __('lang.portfolio-heading') }}
         </h2>
         <p class="max-w-3xl mx-auto mt-4 text-xl text-center text-gray-500">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in, accusamus quisquam.
+          {{ __('lang.portfolio-subheading') }}
         </p>
       </div>
     <ul role="list" class="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-3 xl:gap-x-8">

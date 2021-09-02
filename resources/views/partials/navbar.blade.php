@@ -10,7 +10,7 @@ class="sticky top-0 bg-primary">
               <span class="sr-only">Poppy's Balloons</span>
               <img class="w-auto h-8 sm:h-10" src="/img/balloons.png" alt="">
             </a>
-            <a href="#" class="text-xl font-medium text-white">Poppy's Balloons</a>
+            <a href="#" class="text-2xl font-medium text-white">Poppy's Balloons</a>
           </div>
   
           <div 
@@ -30,20 +30,20 @@ class="sticky top-0 bg-primary">
   
           <nav class="hidden space-x-10 md:flex">
   
-            <a href="#services" class="text-base font-medium text-white nav-link drop-shadow hover:text-secondary">
-              Party Services
+            <a href="#services" class="text-lg font-medium text-white nav-link drop-shadow hover:text-secondary">
+              {{ __('lang.nav-link-1') }}
             </a>
 
-            <a href="#portfolio" class="text-base font-medium text-white nav-link hover:text-secondary">
-                Portfolio
+            <a href="#portfolio" class="text-lg font-medium text-white nav-link hover:text-secondary">
+              {{ __('lang.nav-link-2') }}
               </a>
   
-            <a href="#about-me" class="text-base font-medium text-white nav-link hover:text-secondary">
-              About Me
+            <a href="#about-me" class="text-lg font-medium text-white nav-link hover:text-secondary">
+              {{ __('lang.nav-link-3') }}
             </a>
   
-            <a href="#contact" class="text-base font-medium text-white nav-link hover:text-secondary">
-              Contact Me
+            <a href="#contact" class="text-lg font-medium text-white nav-link hover:text-secondary">
+              {{ __('lang.nav-link-4') }}
             </a>
             
         
@@ -77,7 +77,7 @@ class="sticky top-0 bg-primary">
                     <a href="">
                   <img class="w-auto h-8" src="/img/balloons.png" alt="Poppy's Balloons">
                     </a>
-                  <a href="#" class="text-xl font-medium text-white">Poppy's Balloons</a>
+                  <a href="#" class="text-2xl font-medium text-white">Poppy's Balloons</a>
                 </div>
                 {{-- Logo End --}}
   
@@ -87,8 +87,8 @@ class="sticky top-0 bg-primary">
                 >
                   <button   
                   type="button" 
-                  class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md bg-primary hover: hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                    <span class="sr-only">Close menu</span>
+                  class="inline-flex items-center justify-center p-2 text-white rounded-md bg-primary hover: hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    <span class="sr-only">{{ __('lang.close-menu') }}</span>
 
                     <!-- Heroicon name: outline/x -->
                     <svg 
@@ -105,20 +105,26 @@ class="sticky top-0 bg-primary">
                 <nav class="grid grid-cols-1 gap-7">
                     
                   <a href="#services" class="flex items-center p-3 -m-3 text-white rounded-lg hover:bg-gray-50">
-                    <div class="ml-4 text-base font-medium text-white hover:text-black">
-                      Party Services
+                    <div class="ml-4 text-lg font-medium text-white hover:text-black">
+                      {{ __('lang.nav-link-1') }}
                     </div>
                   </a>
   
                   <a href="#about-me" class="flex items-center p-3 -m-3 text-white rounded-lg hover:bg-gray-50">
-                    <div class="ml-4 text-base font-medium text-white hover:text-black">
-                      About Me
+                    <div class="ml-4 text-lg font-medium text-white hover:text-black">
+                      {{ __('lang.nav-link-2') }}
                     </div>
                   </a>
   
                   <a href="#contact" class="flex items-center p-3 -m-3 rounded-lg hover:bg-gray-50">
-                    <div class="ml-4 text-base font-medium text-white hover:text-black">
-                      Contact Me
+                    <div class="ml-4 text-lg font-medium text-white hover:text-black">
+                      {{ __('lang.nav-link-3') }}
+                    </div>
+                  </a>
+
+                  <a href="#contact" class="flex items-center p-3 -m-3 rounded-lg hover:bg-gray-50">
+                    <div class="ml-4 text-lg font-medium text-white hover:text-black">
+                      {{ __('lang.nav-link-4') }}
                     </div>
                   </a>
   
@@ -128,7 +134,7 @@ class="sticky top-0 bg-primary">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="white">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /> 
                     </svg>
-                    <p class="pl-1 text-base font-medium text-white hover:text-black">Call Now: 719-354-7012</p>
+                    <p class="pl-1 text-lg font-medium text-white hover:text-black">{{ __('lang.nav-call-now') }}: 719-354-7012</p>
                   </span>
                   </a>
   

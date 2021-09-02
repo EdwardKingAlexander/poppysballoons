@@ -8,8 +8,12 @@
       <div class="bg-warm-gray-50">
         <div class="py-24 lg:py-32">
           <div class="relative z-10 pl-4 pr-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <h1 class="text-4xl font-extrabold tracking-tight rocky-windsong text-warm-gray-900 sm:text-5xl lg:text-6xl">Get in touch</h1>
-            <p class="max-w-3xl mt-6 text-xl text-warm-gray-500">Vel nunc non ut montes, viverra tempor. Proin lectus nibh phasellus morbi non morbi. In elementum urna ut volutpat. Sagittis et vel et fermentum amet consequat.</p>
+            <h1 class="text-4xl font-extrabold tracking-tight rocky-windsong text-warm-gray-900 sm:text-5xl lg:text-6xl">
+              {{ __('lang.contact-heading') }}
+            </h1>
+            <p class="max-w-3xl mt-6 text-xl text-warm-gray-500">
+              {{ __('lang.contact-subheading') }}
+            </p>
           </div>
         </div>
       </div>
@@ -30,7 +34,9 @@
         </div>
         <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div class="relative shadow-xl bg-accent-one">
-            <h2 id="contact-heading" class="sr-only">Contact us</h2>
+            <h2 id="contact-heading" class="sr-only">
+              {{ __('lang.form-heading-screenreader') }}
+            </h2>
   
             <div class="grid grid-cols-1 lg:grid-cols-3">
               <!-- Contact information -->
@@ -69,8 +75,12 @@
                     </defs>
                   </svg>
                 </div>
-                <h3 class="text-lg font-medium text-white">Contact information</h3>
-                <p class="max-w-3xl mt-6 text-base text-white">For all party requests and information, please contact us via email, phone, or fill out the form and we will contact you as soon as possible.</p>
+                <h3 class="text-lg font-medium text-white">
+                  {{ __('lang.form-heading') }}
+                </h3>
+                <p class="max-w-3xl mt-6 text-base text-white">
+                  {{ __('lang.form-subheading') }}
+                </p>
                 <dl class="mt-8 space-y-6">
                   <dt><span class="sr-only">Phone number</span></dt>
                   <dd class="flex text-base text-white">
@@ -112,7 +122,9 @@
 
               <!-- Contact form -->
               <div class="px-6 py-10 border-black sm:px-10 lg:col-span-2 xl:p-12">
-                <h3 class="text-lg font-medium text-warm-gray-900">Send us a message</h3>
+                <h3 class="text-lg font-medium text-warm-gray-900">
+                  {{ __('lang.form-title') }}
+                </h3>
 
                 {{-- Error Handeling --}}
 
@@ -130,7 +142,9 @@
                   
 
                   <div>
-                    <label for="first-name" class="block text-sm font-medium text-warm-gray-900">First name</label>
+                    <label for="first-name" class="block text-sm font-medium text-warm-gray-900">
+                      {{ __('lang.form-first-name') }}
+                    </label>
                     <div class="mt-1">
                       <input required 
                       type="text" 
@@ -143,7 +157,9 @@
 
 
                   <div>
-                    <label for="last-name" class="block text-sm font-medium text-warm-gray-900">Last name</label>
+                    <label for="last-name" class="block text-sm font-medium text-warm-gray-900">
+                      {{ __('lang.form-last-name') }}
+                    </label>
                     <div class="mt-1">
                       <input required type="text"value="{{ old('last_name') }}" name="last_name" id="last_name" autocomplete="family-name" class="block w-full px-4 py-3 rounded-md shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-600 border-warm-gray-300">
                     </div>
@@ -151,7 +167,9 @@
 
 
                   <div>
-                    <label for="email" class="block text-sm font-medium text-warm-gray-900">Email</label>
+                    <label for="email" class="block text-sm font-medium text-warm-gray-900">
+                      {{ __('lang.form-email') }}
+                    </label>
                     <div class="mt-1">
                       <input required id="email" value="{{ old('email') }}" name="email" type="email" autocomplete="email" class="block w-full px-4 py-3 rounded-md shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-600 border-warm-gray-300">
                     </div>
@@ -160,7 +178,9 @@
 
                   <div>
                     <div class="flex justify-between">
-                      <label for="phone" class="block text-sm font-medium text-warm-gray-900">Phone</label>
+                      <label for="phone" class="block text-sm font-medium text-warm-gray-900">
+                        {{ __('lang.form-phone') }}
+                      </label>
                       <span 
                       id="phone-format"
                       @if ($errors->has('phone'))
@@ -183,7 +203,9 @@
 
 
                   <div class="sm:col-span-2">
-                    <label for="subject" class="block text-sm font-medium text-warm-gray-900">Subject</label>
+                    <label for="subject" class="block text-sm font-medium text-warm-gray-900">
+                      {{ __('lang.form-subject') }}
+                    </label>
                     <div class="mt-1">
                       <input required type="text" value="{{ old('subject') }}"  name="subject" id="subject" class="block w-full px-4 py-3 rounded-md shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-600 border-warm-gray-300">
                     </div>
@@ -192,10 +214,11 @@
 
                   <div class="sm:col-span-2">
                     <div class="flex justify-between">
-                      <label for="message" class="block text-sm font-medium text-warm-gray-900">Message</label>
+                      <label for="message" class="block text-sm font-medium text-warm-gray-900">
+                        {{ __('lang.form-message') }}
+                      </label>
                       <span id="message-max" class="text-sm text-warm-gray-500">
-                        
-                        Max. 500 characters
+                        {{ __('lang.form-max-characters') }}
                       </span>
                     </div>
                     <div class="mt-1">
@@ -206,7 +229,7 @@
 
                   <div class="sm:col-span-2 sm:flex sm:justify-end">
                     <button type="submit" class="inline-flex items-center justify-center w-full px-6 py-3 mt-2 text-base font-medium text-white bg-yellow-500 border border-white rounded-md shadow-sm text-shadow hover:bg-white hover:text-yellow-500 hover:border-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 sm:w-auto">
-                      Submit
+                      {{ __('lang.form-button') }}
                     </button>
                   </div>
 

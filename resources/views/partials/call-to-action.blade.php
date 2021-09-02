@@ -14,16 +14,22 @@
           <div class="absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden" aria-hidden="true"></div>
           <div class="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0">
             <div class="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
-              <img class="object-fill object-center shadow-2xl rounded-3xl" src="/img/balloon_animal.jpg" alt="">
+              <img class="object-fill object-center shadow-2xl rounded-3xl" src="/img/balloon_animal.jpg" alt="{{ __('lang.call-to-action-picture') }}">
             </div>
           </div>
         </div>
   
         <div class="relative bg-primary lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
           <div class="relative max-w-md px-4 py-12 mx-auto space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
-            <h2 class="text-3xl font-extrabold text-white rocky-windsong" id="join-heading">Bringing Life to the Party!</h2>
-            <p class="text-lg text-white">I bring fun and advenrure to birthdays, weddings, and everything inbetween!</p>
-            <a class="block w-full px-5 py-3 text-base font-medium text-center text-white bg-yellow-500 border border-white rounded-md shadow-md hover:bg-white hover:text-yellow-500 sm:inline-block sm:w-auto" href="#">Contact Me Now!</a>
+            <h2 class="text-3xl font-extrabold text-white rocky-windsong" id="join-heading">
+              {{ __('lang.call-to-action-title') }}
+            </h2>
+            <p class="text-lg text-white">
+              {{ __('lang.call-to-action-description') }}
+            </p>
+            <a class="block w-full px-5 py-3 text-base font-medium text-center text-white bg-yellow-500 border border-white rounded-md shadow-md hover:bg-white hover:text-yellow-500 sm:inline-block sm:w-auto" href="tel:7193547012">
+              {{ __('lang.call-to-action-button') }}
+            </a>
           
           </div>
         </div>
