@@ -27,7 +27,7 @@
             <p class="text-lg text-white">
               {{ __('lang.call-to-action-description') }}
             </p>
-            <a class="block w-full px-5 py-3 text-base font-medium text-center text-white bg-yellow-500 border border-white rounded-md shadow-md hover:bg-white hover:text-yellow-500 sm:inline-block sm:w-auto" href="tel:7193547012">
+            <a class="block w-full px-5 py-3 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-yellow-500 border border-white rounded-md shadow-md hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-yellow-500 hover:font-extrabold sm:inline-block sm:w-auto" href="tel:7193547012">
               {{ __('lang.call-to-action-button') }}
             </a>
           
