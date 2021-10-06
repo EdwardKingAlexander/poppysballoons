@@ -29,5 +29,15 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
+    'recaptcha' => 
+    [
+        'sitekey' => env('RECAPTCHAV3_SITEKEY'),
+        'secret' => env('RECAPTCHAV3_SECRET')
+    ],
+    'nexmo' =>
+    [
+        'sms_from_pro' => '18443135605',
+        'sms_from' => '18442004459'
+    ]
 
 ];

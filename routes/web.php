@@ -27,4 +27,4 @@ Route::get('/{lang?}', function ($lang = null) {
     
 });
 
-Route::post('/send-message', [ContactController::class, 'store'])->name('send-message');
+Route::post('/sendmessage', [ContactController::class, 'store'])->name('sendmessage');

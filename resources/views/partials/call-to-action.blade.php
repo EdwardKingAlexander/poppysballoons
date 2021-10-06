@@ -21,7 +21,7 @@
   
         <div class="relative bg-primary lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
           <div class="relative max-w-md px-4 py-12 mx-auto space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
-            <h2 class="text-3xl font-extrabold text-white rocky-windsong" id="join-heading">
+            <h2 class="text-4xl font-semibold text-white rocky-windsong" id="join-heading">
               {{ __('lang.call-to-action-title') }}
             </h2>
             <p class="text-lg text-white">

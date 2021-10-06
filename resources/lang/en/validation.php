@@ -136,8 +136,8 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'g-recaptcha-response' => [
+            'recaptchav3' => 'You waited too long to submit the form and there was a timeout on the server. Please resubmit the form.',
         ],
     ],
 

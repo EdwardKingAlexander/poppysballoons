@@ -1,5 +1,5 @@
 :root, html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     --primary-color: #E68992;
     --secondary-color: #ffd9ce;
     --accent-one: #fbf5f3;
@@ -12,7 +12,7 @@
 }
 
 .rocky-windsong {
-    font-family: 'WindSong', cursive;
+    font-family: 'Carattere', cursive;
 }
 
 

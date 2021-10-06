@@ -134,12 +134,16 @@
 
                 <form 
                 id="form" 
-                action="{{ route('send-message') }}"
+                action="{{ route('sendmessage') }}"
                 name="contact-form" 
                 method="POST" 
-                class="grid grid-cols-1 mt-6 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                class="grid grid-cols-1 mt-6 gap-y-6 g-recaptcha sm:grid-cols-2 sm:gap-x-8"
+                data-sitekey="{{ config('config.recaptcha.sitekey') }}" 
+                data-callback='onSubmit' 
+                data-action='submit'>
                   @csrf
-                  
+
+                  {!! RecaptchaV3::field('sendmessage') !!}
 
                   <div>
                     <label for="first-name" class="block text-sm font-medium text-warm-gray-900">
@@ -214,7 +218,7 @@
 
                   <div class="sm:col-span-2">
                     <div class="flex justify-between">
-                      <label for="message" class="block text-sm font-medium text-warm-gray-900">
+                      <label for="content" class="block text-sm font-medium text-warm-gray-900">
                         {{ __('lang.form-message') }}
                       </label>
                       <span id="message-max" class="text-sm text-warm-gray-500">
@@ -222,7 +226,7 @@
                       </span>
                     </div>
                     <div class="mt-1">
-                      <textarea id="message"   name="message" rows="4" class="block w-full px-4 py-3 border rounded-md shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-600 border-warm-gray-300" aria-describedby="message-max">{{ old('message') }}</textarea>
+                      <textarea id="content"   name="content" rows="4" class="block w-full px-4 py-3 border rounded-md shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-600 border-warm-gray-300" aria-describedby="message-max">{{ old('content') }}</textarea>
                     </div>
                   </div>
 

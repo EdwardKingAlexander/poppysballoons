@@ -3,7 +3,7 @@
 <div class="py-12 bg-accent-one">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="lg:text-center">
-        <h2 class="text-base text-3xl font-semibold tracking-wide text-black uppercase rocky-windsong">
+        <h2 class="text-base text-3xl font-semibold tracking-wide text-black rocky-windsong">
           {{ __('lang.services-title') }}
         </h2>
         <p class="mt-2 text-2xl font-extrabold leading-8 tracking-tight text-black sm:text-4xl">

@@ -12,7 +12,7 @@ return [
     'call-to-action-title' => 'Professional Facepainting and Balloon Animal Services',
     'call-to-action-description' => 'I bring fun and advenrure to birthdays, weddings, and everything inbetween!',
     'call-to-action-picture' => 'A giraffe balloon animal',
-    'call-to-action-button' => 'Contact Me Now!',
+    'call-to-action-button' => 'Contac Me Now!',
     
     'services-title' => 'My Services',
     'services-subheading' => 'Make their birthdays and special events memorable',

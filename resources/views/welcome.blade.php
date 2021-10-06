@@ -12,12 +12,22 @@
         party services in Colorado Springs" >
 
         <title>{{ __('lang.title') }}</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=WindSong&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com" defer>
+        <link rel="preconnect" href="https://fonts.gstatic.com" defer crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Roboto&display=swap" rel="stylesheet">
+        {!! RecaptchaV3::initJs() !!}
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}" defer>
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PESEZD21H7"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-PESEZD21H7');
+        </script>
+        
 
     </head>
     <body>

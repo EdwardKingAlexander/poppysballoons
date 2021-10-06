@@ -45,18 +45,17 @@ class="sticky top-0 bg-primary">
             <a href="#contact" class="text-lg font-medium text-white nav-link hover:text-secondary">
               {{ __('lang.nav-link-4') }}
             </a>
+
             
         
   
   
           </nav>
+
+          
          
         </div>
-  
-  
-  
-  
-  
+
   
   
 
