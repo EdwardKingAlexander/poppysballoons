@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Mail\FormSubmitted;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use app\Notifications\FormSubmitted as text;
 use Nexmo\Laravel\Facade\Nexmo;
 
 class ContactController extends Controller
